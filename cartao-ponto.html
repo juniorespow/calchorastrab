@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery.datepick.pack.js"></script>
+    <script language="javascript" type="text/javascript" src="js/javascript.js"></script>
+    <meta charsert="utf-8" />
+    <meta content="width=device-width, initial scale=1, maximum-scale=1" name="viewport">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css">
+    <title>Cartão Ponto - Cartográfico</title>
+</head>
+
+<body>
+
+    <div class="panel">
+        <div class="panel-header">
+            <img src="images/logo.png" width="20%" height="40%" />
+            <h2> Ponto Cartográfico - Audicom Tecnologia </h2>
+        </div>
+
+
+        <br class="panel-header">
+        <h4> Calculadora de horas trabalhadas.</h4>
+        <br>
+        <spam>Pressione a tecla "Tab" para mudar os campos.</spam><br>
+        <br>Ao terminar de preencher os campos clique em calcular.</br>
+        <br>Para limpar todos os campos, clique no botão "Limpar".</br>
+    </div>
+
+    </div>
+
+    <div id="printArea">
+        <div id="enter_time">
+            <table cellspacing="0" cellpadding="0" class="lineTarget" align="center">
+                <tr height="35" valign="middle">
+                    <th></th>
+                    <th align="left"><span style="background-color:#f2f2f2">Entrada 1:</span></th>
+                    <th align="left"><span style="background-color:#f2f2f2">Saída 1:</span></th>
+                    <th align="left"><span style="background-color:#f2f2f2">Entrada 2:</span></th>
+                    <th align="left"><span style="background-color:#f2f2f2">Saída 2:</span></th>
+                </tr>
+                <tr class="inputLine">
+                    <td>
+                        <div class="listNum">1</div>
+                    </td>
+                    <td width="20%" height="32" valign="center">
+                        <input type="text" class="listfield inputbox yellow_inputbox hour" value="00" maxlength="2" /> :
+                        <input type="text" class="listfield inputbox yellow_inputbox minute" value="00" maxlength="2" />
+                    </td>
+                    <td width="20%" valign="center">
+                        <input type="text" class="listfield inputbox yellow_inputbox hour" value="00" maxlength="2" /> :
+                        <input type="text" class="listfield inputbox yellow_inputbox minute" value="00" maxlength="2" />
+                    </td>
+                    <td width="20%" valign="center">
+                        <input type="text" class="listfield inputbox yellow_inputbox hour" value="00" maxlength="2" /> :
+                        <input type="text" class="listfield inputbox yellow_inputbox minute" value="00" maxlength="2" />
+                    </td>
+                    <td width="20%" valign="center">
+                        <input type="text" class="listfield inputbox yellow_inputbox hour" value="00" maxlength="2" /> :
+                        <input type="text" class="listfield inputbox yellow_inputbox minute" value="00" maxlength="2" />
+                    </td>
+                    <td width="4%">=</td>
+                    <td width="8%"><input type="text" class="listfield inputbox gray_inputbox" value="00:00" readonly="readonly" /></td>
+                </tr>
+            </table>
+        </div>
+        <div class="rows" align="right"><span rel="7">7 rows</span>&nbsp;&nbsp;</div>
+        <div class="totals">
+            <h3>
+                Total:
+                <input type="text" class="listfield enter gray_inputbox" value="00:00" id="total" name="total" val="0" readonly="readonly" /></td>
+            </h3>
+
+        </div>
+        <button type="button" name="Calcular" style="cursor: pointer;" value="Calcular" id="calculate" class="css3button">Calcular</button>
+        <button type="button" VALUE="Limpar" style="cursor: pointer;" class="css3button" onClick='parent.location="javascript:location.reload()"'>Limpar</button>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

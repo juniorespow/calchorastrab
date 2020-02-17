@@ -1,0 +1,379 @@
+    main {
+        margin-top: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+        display: inline-block;
+        width: calc(100% - 250px);
+        flex-grow: 1;
+    }
+    
+    * {
+        -webkit-appearance: none;
+        border-radius: 0;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        border: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        outline: none;
+    }
+    
+    main {
+        display: block;
+    }
+    
+    html {
+        font-size: 13px;
+        color: #333;
+    }
+    
+    html,
+    input,
+    textarea,
+    select,
+    button {
+        font-family: "Lato-Regular", "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif !important;
+    }
+    
+    .panel {
+        background-color: #f2f2f2;
+    }
+    /* Configuração de estilo do painel*/
+    
+    .panel .panel-header {
+        border: 1px solid #cacaca;
+        box-shadow: 0px 1px 0px #fff inset;
+        padding: 16px 0px 16px 50px;
+        font-weight: bolder;
+        position: relative;
+    }
+    
+    .cabecalhoCartaoPonto {
+        padding: 20px;
+    }
+    
+    .cabecalhoCartaoPonto .dataCartaoPonto {
+        display: inline-block !important;
+        width: 150px;
+        vertical-align: bottom;
+        margin-bottom: 10px;
+    }
+    
+    .input-calendar {
+        display: inline;
+        position: relative;
+    }
+    /* **************************************** */
+    
+    .panel.panel-body.auto-preencher {
+        min-height: calc( 100vh - 45px - 0px - 50px - 20px);
+    }
+    
+    .panel .panel-body {
+        height: calc(100% - 60px);
+        border: 1px solid #cacaca;
+        border-top: none;
+        background-color: #fff;
+    }
+    /* Formatação da tabela de entrada e saida dos funcionários */
+    
+    div[class^='table'] {
+        margin: 0px 10px;
+    }
+    
+    .divTableCartaoPonto {
+        margin: 0 20px 20px 20px !important;
+    }
+    
+    table {
+        display: table;
+        border-collapse: separate;
+        border-spacing: 2px;
+        border-color: grey;
+    }
+    
+    .editable-table-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        border: solid 1px #cacaca;
+    }
+    
+    .editable-table-header-container {
+        background-color: #f4f4f4;
+        overflow: hidden;
+        position: relative;
+        z-index: 10;
+        border-bottom: solid 1px #cacaca;
+    }
+    
+    .editable-table-header {
+        position: absolute;
+    }
+    
+    .editable-table-body-container {
+        overflow: auto;
+        background-color: #fff;
+    }
+    
+    .editable-table-container table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        table-layout: fixed;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .tableDiasCartaoPonto {
+        font-family: "Lato-Regular", "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif !important;
+        font-size: 13px;
+        color: #333;
+        -webkit-appearance: none;
+        border-radius: 0;
+        box-sizing: border-box;
+        border: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        outline: none;
+        position: absolute;
+        border-spacing: 0;
+        border-collapse: collapse;
+        table-layout: fixed;
+        user-select: none;
+        left: 0px;
+    }
+    
+    .editable-table-fixed-columns {
+        position: absolute;
+        left: 0;
+        z-index: 2;
+    }
+    /* CSS Document */
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .wrap {
+        width: 885px;
+        margin: 0px auto;
+    }
+    
+    .container {
+        background: #0D0D0D repeat-x top;
+    }
+    
+    .left {
+        background: repeat-y left;
+    }
+    
+    .right {
+        background: url(../images/form_bgright.jpg) repeat-y right;
+        padding-left: 8px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    #msgs {
+        color: red;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        display: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .start {
+        margin-top: 5px;
+    }
+    
+    .inputbox {
+        width: 60px;
+        height: 21px;
+        line-height: 21px;
+        border-radius: 10px 20px 30px;
+    }
+    
+    .yellow_inputbox {
+        border: 1px solid #666;
+        background: #fff;
+        color: #000;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    option {
+        color: #000;
+    }
+    
+    .selectbox {
+        width: 48px;
+        padding: 2px;
+        border: 1px solid #666;
+        background: #fff;
+        border-radius: 2px;
+    }
+    
+    .lineTarget {
+        width: 95%;
+        background: url(../images/table-color-bg.png) no-repeat left bottom;
+        margin: 0 auto 5px;
+    }
+    
+    .lineTarget th span {
+        padding: 5px;
+    }
+    
+    .lineTarget td {
+        line-height: 20px;
+    }
+    
+    .gray_inputbox {
+        background: #0c71c3;
+        width: 58px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 10px 20px 30px;
+    }
+    
+    .listNum {
+        background: no-repeat center top;
+        width: 27px;
+        text-align: center;
+        color: #0c71c3;
+        height: 20px;
+    }
+    
+    .totals {
+        text-align: right;
+        margin: 15px 15px;
+        position: relative;
+    }
+    
+    .enter {
+        width: 67px;
+        height: 21px;
+        line-height: 21px;
+    }
+    
+    .support {
+        text-align: center;
+        margin-right: 5px;
+    }
+    
+    .grand {
+        width: 21px;
+    }
+    
+    #enter_time {
+        margin: 3px 0 0;
+        /*width: 290px;
+	overflow-y: scroll;*/
+    }
+    
+    a {
+        color: #FFF;
+        text-decoration: underline;
+    }
+    
+    .rows {
+        display: none;
+    }
+    
+    .rows span {
+        cursor: pointer;
+        display: none;
+    }
+    
+    #msg {
+        color: red;
+        font: bold 12px verdana;
+    }
+    
+    #email {
+        width: 130px;
+        *width: 115px;
+    }
+    
+    #outBox {
+        position: relative;
+    }
+    
+    #emailBox {
+        position: absolute;
+        top: -75px;
+        right: 5px;
+        background: #111;
+        border: 1px solid #111;
+        display: none;
+        width: 292px;
+        height: 75px;
+    }
+    
+    #emailBox input,
+    #emailBox textarea {
+        border: 1px solid #000;
+    }
+    
+    #emailBox textarea {
+        width: 200px;
+        height: 58px;
+        *height: 48px;
+    }
+    
+    .submitSendEmail,
+    .cancelSend {
+        font-size: 12px;
+    }
+    
+    .emailButtons {
+        text-align: center;
+    }
+    
+    #printArea {
+        /*text-align: center;*/
+        background-color: #f2f2f2;
+    }
+    
+    .weekof {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 15px 5px 10px;
+    }
+    
+    .weekof input {
+        width: 20px;
+        text-align: center;
+    }
+    
+    div.btn {
+        background: #72b1f8;
+        text-align: center;
+        width: 98px;
+        height: 33px;
+        line-height: 33px;
+    }
+    
+    button.css3button {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        color: #2c2929;
+        padding: 10px 20px;
+        background: -webkit-gradient( linear, left top, left bottom, from(#0c71c3), color-stop(0.75, #0c71c3), to(#0c71c3));
+        background: linear-gradient( top, #0c71c3 0%, #0c71c3 75%, #0c71c3);
+        border-radius: 10px;
+        border: 1px solid #0c71c3;
+        box-shadow: 0px 1px 3px rgba(12, 113, 195, 0.5), inset 0px 0px 2px rgba(12, 113, 195, 1);
+        text-shadow: 0px -1px 0px rgba(71, 69, 69, 0.2), 0px 1px 0px rgb(66, 64, 64);
+    }
